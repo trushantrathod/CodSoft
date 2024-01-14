@@ -1,0 +1,263 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fd6e00df;
+}
+
+@keyframes fadeInAndRotate {
+    from {
+        opacity: 0;
+        transform: translateY(20px) rotate(-5deg);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) rotate(0);
+    }
+}
+
+/* Common keyframes animation for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover effect for the entire body background-color */
+body:hover {
+    background-color: #333;
+}
+
+/* Styling for main content sections */
+section {
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling for the section headings */
+.section-heading {
+    background: linear-gradient(45deg, #0099ffb5, #2ecc7000);
+    color: #eaff00;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 1.2em; 
+    transition: background 0.5s ease-in-out;
+    font-weight: bold; 
+    text-transform: uppercase; 
+    margin: 0 auto; 
+}
+
+/* Hover effect for the top section heading */
+.section-heading:hover {
+    background: linear-gradient(45deg, #000000, #e98400);
+}
+
+/* Common styling for navigation background-color and links */
+nav {
+    background: linear-gradient(45deg, rgba(255, 255, 68, 0), rgb(0, 0, 0));
+    padding: 10px;
+    text-align: center;
+    transition: background 0.5s ease-in-out;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fe0000;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+
+/* Styling for header with keyframes animation */
+header {
+    background: linear-gradient(45deg, #2364d5ad, #991717);
+    color: #cfa10b;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 1.4em;
+    font-style: italic;
+    position: relative;
+    z-index: 1;
+    animation: fadeInAndRotate 1s ease-out;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.667), rgba(123, 123, 123, 0.47));
+    color: #af9d19e0; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+}
+
+header h1 {
+    margin: 0;
+    color: #065897;
+}
+
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(91, 90, 90, 0) 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+/* Styling for images in the about section with a hover effect */
+#about img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+#about p {
+    font-size: 1.2em;
+}
+
+#about img {
+    max-width: 280px;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    box-shadow: 0 0 20px rgba(165, 170, 18, 0.5);
+}
+
+#about img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); 
+}
+
+/* Styling for unordered lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Styling for project sections */
+.project {
+    display: flex;
+    font-size: 1.2em;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Styling for project images */
+.project img {
+    max-width: 100px; 
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+    margin-bottom: 10px;
+}
+
+
+.project:hover img {
+    transform: scale(1.1);
+}
+
+/* Styling for the footer with a gradient background */
+footer {
+    background: linear-gradient(45deg, #00fa707f, #6d6c50d2);
+    color: #ffd900; 
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.2em;
+    font-weight: bold; 
+}
+
+.colored-background {
+    background: linear-gradient(45deg, #000000, #626262);
+}
+
+/* Styling for social links section */
+.social-links {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.social-links img {
+    max-width: 50px;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for social link images within a link */
+.social-links a:hover img {
+    transform: scale(1.2);
+}
+
+/* Styling for skills section */
+#skills {
+    text-align: center; 
+}
+
+.skill {
+    display: inline-block; 
+    margin: 0 10px; 
+}
+
+.skill img {
+    max-width: 100px;
+    border-radius: 15px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.skill img:hover {
+    transform: scale(1.1);
+}
+
+/* Styling for a middle-heading */
+.middle-heading {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+/* Additional styles for colors and animations in the navigation */
+nav a {
+    text-decoration: none;
+    color: #ffffffbb;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect for navigation links */
+nav a:hover {
+    color: #00ff22;
+}
+
