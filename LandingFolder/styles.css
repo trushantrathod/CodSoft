@@ -129,37 +129,6 @@ footer {
     transform: scale(1.1);
 }
 
-/* Customer reviews styles */
-.customer-reviews {
-    padding: 2em;
-    text-align: center;
-    color: #fff;
-}
-
-.customer-reviews h3 {
-    margin-bottom: 1em;
-}
-
-.average-rating {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.rating-stars {
-    font-size: 24px;
-    color: #ffd700;
-}
-
-.rating-score {
-    margin: 0 1em;
-    font-size: 1.2em;
-}
-
-.review-count {
-    font-size: 0.9em;
-}
-
 /* Navbar styles */
 .navbar {
     position: fixed;
@@ -209,45 +178,6 @@ footer {
     gap: 1em;
     max-width: 600px;
     margin: 0 auto;
-}
-
-.contact-form-section label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 0.5em;
-    color: #3498db;
-}
-
-.contact-form-section input,
-.contact-form-section textarea {
-    width: 100%;
-    padding: 0.5em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    transition: border-color 0.3s;
-}
-
-.contact-form-section input:focus,
-.contact-form-section textarea:focus {
-    border-color: #e44d26;
-}
-
-.contact-form-section button {
-    background-color: #e44d26;
-    color: #fff;
-    padding: 0.5em 1em;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.contact-form-section button:hover {
-    background-color: #d0411f;
-}
-
-.contact-form-section button:active {
-    transform: scale(0.95);
 }
 
 /* Blog post styles */
