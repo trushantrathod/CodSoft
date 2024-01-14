@@ -1,0 +1,71 @@
+body {
+    background-color: #282c35; /* Dark background color */
+    color: #ffffff; /* Light text color */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 8px;
+    max-width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #555;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out; /* Add transition for a smooth 3D effect */
+}
+
+#calculator:hover {
+    transform: scale(1.05);
+}
+
+#display {
+    grid-column: span 4;
+    height: 40px;
+    font-size: 1.5em;
+    text-align: right;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #444;
+    border: 1px solid #555;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out; /* Add transition for a smooth 3D effect */
+    font-weight: bold; /* Make the display text bold */
+}
+
+button {
+    font-size: 1.2em;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    transition: transform 0.2s ease-in-out; /* Add transition for a smooth 3D effect */
+    font-weight: bold; /* Make all buttons bold */
+}
+
+button:active {
+    transform: scale(0.95); /* Add a slight shrink effect when the button is active */
+}
+
+.operator-button {
+    background-color: #ff9800; /* Orange color for operator buttons */
+}
+
+button:hover {
+    transform: translate(0, -5px); /* Move the button up slightly on hover */
+}
+
+/* Add a different color for the hover effect on operator buttons */
+.operator-button:hover {
+    background-color: #e08600;
+    transform: translate(0, -5px); /* Move the operator button up slightly on hover */
+}
