@@ -1,6 +1,6 @@
 body {
-    background-color: #282c35; /* Dark background color */
-    color: #ffffff; /* Light text color */
+    background-color: #282c35; 
+    color: #ffffff; 
     font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
@@ -19,7 +19,7 @@ body {
     border: 1px solid #555;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease-in-out; /* Add transition for a smooth 3D effect */
+    transition: transform 0.3s ease-in-out; 
 }
 
 #calculator:hover {
@@ -36,9 +36,8 @@ body {
     background-color: #444;
     border: 1px solid #555;
     border-radius: 5px;
-    transition: transform 0.3s ease-in-out; /* Add transition for a smooth 3D effect */
-    font-weight: bold; /* Make the display text bold */
-}
+    transition: transform 0.3s ease-in-out; 
+    font-weight: bold; 
 
 button {
     font-size: 1.2em;
@@ -48,24 +47,22 @@ button {
     color: #fff;
     border: none;
     border-radius: 3px;
-    transition: transform 0.2s ease-in-out; /* Add transition for a smooth 3D effect */
-    font-weight: bold; /* Make all buttons bold */
+    transition: transform 0.2s ease-in-out; 
+    font-weight: bold; 
 }
 
 button:active {
-    transform: scale(0.95); /* Add a slight shrink effect when the button is active */
+    transform: scale(0.95); 
 }
 
 .operator-button {
-    background-color: #ff9800; /* Orange color for operator buttons */
+    background-color: #ff9800;
 }
 
 button:hover {
-    transform: translate(0, -5px); /* Move the button up slightly on hover */
+    transform: translate(0, -5px); 
 }
-
-/* Add a different color for the hover effect on operator buttons */
 .operator-button:hover {
     background-color: #e08600;
-    transform: translate(0, -5px); /* Move the operator button up slightly on hover */
+    transform: translate(0, -5px); 
 }
